@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 
 import styled, { createGlobalStyle } from 'styled-components';
 
-import { Grommet, Nav, Header, Box, Select } from 'grommet';
+import { Grommet, Header, Box, Select } from 'grommet';
 import { grommet } from 'grommet/themes';
 import { hp } from 'grommet-theme-hp';
 

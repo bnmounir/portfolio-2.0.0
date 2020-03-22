@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from './Router';
+
 import { Github, Twitter, Linkedin } from 'grommet-icons';
 import { Anchor, Box, Footer, Text } from 'grommet';
 
@@ -46,6 +48,16 @@ export default () => {
                     MIT License
                 </Text>
             </Box>
+            <Link to='/'>
+                <Box
+                    height='xxsmall'
+                    width='xxsmall'
+                    a11yTitle='avatar'
+                    round='full'
+                    // eslint-disable-next-line max-len
+                    background='url(https://pbs.twimg.com/profile_images/1241544585777680384/HDLwPC3i_400x400.jpg)'
+                />
+            </Link>
             <Media />
         </Footer>
     );
