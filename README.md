@@ -20,3 +20,7 @@
 
 -   Open-source illustrations for any idea you can imagine and create.
 -   A constantly updated design project with beautiful SVG images that you can use completely free and without attribution.
+
+### netlify continuous deployment
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7e8c47f1-4398-41b2-ba35-98c2b433f559/deploy-status)](https://app.netlify.com/sites/frosty-lamport-3a57b3/deploys)
