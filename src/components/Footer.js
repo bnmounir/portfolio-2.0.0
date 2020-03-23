@@ -45,7 +45,7 @@ export default () => {
                         label='Grommet'
                     />{' '}
                     <br />
-                    MIT License
+                    ©Copyright
                 </Text>
             </Box>
             <Link to='/'>

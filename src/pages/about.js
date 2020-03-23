@@ -5,8 +5,8 @@ import about from '../about.svg';
 const aboutArray = [
     {
         title: 'Code',
-        body: [
-            <>
+        body: (
+            <Paragraph size='large' textAlign='center' fill>
                 It took me about 3 days to build this website (quarantine has
                 its ups I guess!), I put it on the the back burner for a while
                 as the whole portfolio website can be tricky if you ask me, I
@@ -18,13 +18,13 @@ const aboutArray = [
                 <Anchor href='https://github.com/bnmounir/portfolio-2.0.0'>
                     Github.
                 </Anchor>
-            </>
-        ]
+            </Paragraph>
+        )
     },
     {
         title: 'History',
-        body: [
-            <>
+        body: (
+            <Paragraph size='large' textAlign='center' fill>
                 Dedication to coding as career started in 2018, at first I
                 wanted to try and transfer some of my previous college degree
                 credits (BS Environmental Engineering) and get a CS degree in a
@@ -34,13 +34,13 @@ const aboutArray = [
                 september 2018 I've been coding none stop since, faced a lot of
                 challenges, learned a lot and got to build some cool little
                 apps.
-            </>
-        ]
+            </Paragraph>
+        )
     },
     {
         title: 'Skills',
-        body: [
-            <>
+        body: (
+            <Paragraph size='large' textAlign='center' fill>
                 As far as bootcamps go they tend to be very experimental, a lot
                 of trial by error and curriculum upgrades. While I was attending
                 one, it felt unsettling to how little progress I was having, and
@@ -55,13 +55,13 @@ const aboutArray = [
                 Node.JS, Express.JS, React, Redux, Serverless Apps, Server-side
                 rendering, NoSQL, Redis, REST API’s, GraphQL, Testing, Web
                 Analytics, Git, GitHub, Slack, Jira.
-            </>
-        ]
+            </Paragraph>
+        )
     },
     {
         title: 'Interests & Future',
-        body: [
-            <>
+        body: (
+            <Paragraph size='large' textAlign='center' fill>
                 Stated with the basics, and now slowly but surely I'm getting to
                 have a wider knowledge about Software Engineering, how to
                 approach problems how to solve challenges.
@@ -89,8 +89,8 @@ const aboutArray = [
                 And Here's what I hope to accomplish: become an application
                 architect, be involved with the whole life cycle of an app, work
                 on AI/ML integrations on mobile and web apps.
-            </>
-        ]
+            </Paragraph>
+        )
     }
 ];
 
@@ -108,9 +108,8 @@ const renderContent = () =>
             key={data.title}
         >
             <Heading size='small'>{data.title}</Heading>
-            <Paragraph size='large' textAlign='center' fill>
-                {data.body}
-            </Paragraph>
+
+            {data.body}
         </Box>
     ));
 
@@ -131,6 +130,7 @@ export default () => {
 
             {renderContent()}
             <Box
+                key='time-clock'
                 direction='row-responsive'
                 justify='center'
                 align='center'

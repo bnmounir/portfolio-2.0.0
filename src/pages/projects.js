@@ -1,4 +1,5 @@
 import React from 'react';
+import { Head } from 'react-static';
 
 import { Heading, Box, Image, Paragraph } from 'grommet';
 import projects from '../projects.svg';
@@ -82,6 +83,9 @@ const ProjectBoxList = () =>
 
 export default () => (
     <Box pad='medium'>
+        <Head>
+            <title>Projects</title>
+        </Head>
         <Box animation='fadeIn' direction='column' pad='medium' align='center'>
             <Box pad='medium'>
                 <Heading margin={{ top: 'none' }}>Projects</Heading>
