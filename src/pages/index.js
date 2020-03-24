@@ -25,9 +25,9 @@ export default () => (
             >
                 <Heading margin='none'>Hi!</Heading>
                 <Text margin='small' size='large'>
-                    I'm Mounir, Full stack developer. I'm Currently working on
-                    the MERN Stack (MongoDB, Express.js, React, Node.js) mainly,
-                    and slowly conquering new technologies.
+                    I'm Mounir, a full stack developer. I'm currently working on
+                    the MERN Stack (MongoDB, Express.js, React, Node.js) and
+                    slowly conquering new technologies.
                 </Text>
             </Main>
 
