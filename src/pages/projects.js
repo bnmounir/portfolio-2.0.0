@@ -48,7 +48,8 @@ const projectsArray = [
     },
     {
         title: 'Continuous Deployment',
-        body: 'This ',
+        body:
+            "The code for this app is hosted on Github, I'm using Netlify's built-in tools for continuous deployment, It's extremely useful for productivity, I just specified the Github repo and the build command and Netlify handles the rest.",
         imgUrl:
             'https://s3.amazonaws.com/poly-screenshots.angel.co/Project/c0/1057255/d66995a05e062a8bbe61591222baf4cd-original.png',
         projectLink: 'https://github.com/bnmounir/portfolio-2.0.0'

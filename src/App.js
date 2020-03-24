@@ -1,40 +1,13 @@
 import React, { createContext, useReducer } from 'react';
-import { Root } from 'react-static';
-// import styled, { createGlobalStyle } from 'styled-components';
-
-// const GlobalStyle = createGlobalStyle`
-//   * {
-//     scroll-behavior: smooth;
-//   }
-//   body {
-//     font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue',
-//     Helvetica, Arial, 'Lucida Grande', sans-serif;
-//     font-weight: 300;
-//     font-size: 16px;
-//     margin: 0;
-//     padding: 0;
-//     background-color: #F2D7EE;
-//   }
-//   a {
-//     text-decoration: none;
-//     color: #F2f2f2;
-//     font-weight: bold;
-//   }
-
-//   img {
-//     max-width: 100%;
-//   }
-// `;
-
-import Footer from './components/Footer';
+import { Root, Head } from 'react-static';
 
 import { GlobalStyle } from './GlobalStyle';
-
 import { Grommet, Box } from 'grommet';
 import { hp } from 'grommet-theme-hp';
 
 import Header from './components/Header';
 import Main from './components/Main';
+import Footer from './components/Footer';
 
 export const ThemeContext = createContext();
 
@@ -58,6 +31,17 @@ export default () => {
 
     return (
         <Root>
+            <Head>
+                <script
+                    async
+                    src='https://www.googletagmanager.com/gtag/js?id=UA-133374571-2'
+                ></script>
+                <script>
+                    window.dataLayer = window.dataLayer || []; function gtag()
+                    {dataLayer.push(arguments)}
+                    gtag('js', new Date()); gtag('config', 'UA-133374571-2');
+                </script>
+            </Head>
             <GlobalStyle />
             <ThemeContext.Provider value={{ state, dispatch }}>
                 <Header />
