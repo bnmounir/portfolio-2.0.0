@@ -17,7 +17,6 @@ export default () => (
         </Head>
         <Box animation='fadeIn' direction='column' pad='medium'>
             <Main
-                background='light-2'
                 elevation='large'
                 pad='large'
                 gap='large'
@@ -27,8 +26,8 @@ export default () => (
                 <Heading margin='none'>Hi!</Heading>
                 <Text margin='small' size='large'>
                     I'm Mounir, Full stack developer. I'm Currently working on
-                    the MERN Stack mainly (MongoDB, Express.js, React, Node.js)
-                    slowly conquering new technologies.
+                    the MERN Stack (MongoDB, Express.js, React, Node.js) mainly,
+                    and slowly conquering new technologies.
                 </Text>
             </Main>
 

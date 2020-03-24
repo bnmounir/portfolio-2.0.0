@@ -1,4 +1,5 @@
 import React from 'react';
+import { Head } from 'react-static';
 import { Box, Clock, Heading, Paragraph, Anchor } from 'grommet';
 import about from '../about.svg';
 
@@ -7,14 +8,15 @@ const aboutArray = [
         title: 'Code',
         body: (
             <Paragraph size='large' textAlign='center' fill>
-                It took me about 3 days to build this website (quarantine has
-                its ups I guess!), I put it on the the back burner for a while
-                as the whole portfolio website can be tricky if you ask me, I
-                tried using DivJoy a couple of weeks back (today is 03/22/20).
-                <Anchor href='https://divjoy.com/'>DivJoy</Anchor> was featured
-                on Product Hunt at the time, and it got me curious, it's pretty
-                cool but it's very young still. the code for this app is hosted
-                on{' '}
+                It took me about three days to build this website. (Quarantine
+                has a silver lining, I guess!) I had put it on the back burner
+                for a while because building a portfolio website can be somewhat
+                tricky. I started out using DivJoy a couple of weeks back (today
+                is 03/22/20). <Anchor href='https://divjoy.com/'>DivJoy</Anchor>{' '}
+                was featured on Product Hunt at the time, and it got me curious.
+                It's pretty cool, but it's also still really young. I decided to
+                go with React Static because it felt more intuitive. Last but
+                not least, the code for this app is hosted on{' '}
                 <Anchor href='https://github.com/bnmounir/portfolio-2.0.0'>
                     Github.
                 </Anchor>
@@ -25,15 +27,17 @@ const aboutArray = [
         title: 'History',
         body: (
             <Paragraph size='large' textAlign='center' fill>
-                Dedication to coding as career started in 2018, at first I
-                wanted to try and transfer some of my previous college degree
-                credits (BS Environmental Engineering) and get a CS degree in a
-                short amount of time. That didn't work with the colleges I
-                applied to, so I opted for a time saver program, I ended up
-                going to a year long coding bootcamp in NYC that started in
-                september 2018 I've been coding none stop since, faced a lot of
-                challenges, learned a lot and got to build some cool little
-                apps.
+                I graduated from college with a BS in Environmental Engineering
+                in 2014. But it wasn’t until 2018, after moving countries and
+                exploring my options, that I realized I wanted to pursue a
+                career in coding instead. At first, I tried to transfer some of
+                my BS credits to get a CS degree on a fast track. Unfortunately
+                that didn't work out with the colleges I was interested in. So,
+                I opted for an intensive one-year coding bootcamp program in
+                NYC. It started in September 2018 and I've been coding nonstop
+                ever since. Over the past two years, I’ve faced a lot of
+                challenges, have learned even more and got to build some cool
+                little apps along the way too.
             </Paragraph>
         )
     },
@@ -41,14 +45,15 @@ const aboutArray = [
         title: 'Skills',
         body: (
             <Paragraph size='large' textAlign='center' fill>
-                As far as bootcamps go they tend to be very experimental, a lot
-                of trial by error and curriculum upgrades. While I was attending
-                one, it felt unsettling to how little progress I was having, and
-                instantly recognized the necessity of an outside source. I
-                started taking several courses and tutorials online. Thats where
-                I starting to build foundations in coding, using FreeCodeCamp,
-                Dev.to, YouTube and Udemy to name a few, the Journey wasn't
-                without bumps but the longer you persist the bigger the reward.
+                I found that Bootcamps tend to be very experimental—a lot of
+                trial by error and frequent curriculum updates. While I was a
+                student, it felt unsettling to see how little progress our class
+                was making. I quickly recognized the need of an additional
+                outside source. I started taking several courses and tutorials
+                online to supplement the Bootcamp. I used FreeCodeCamp, Dev.to,
+                YouTube, and Udemy to name a few. These classes were where I
+                started to build my foundations in coding. The journey wasn't
+                without bumps, but the longer you persist the bigger the reward.
                 <br />
                 <br />
                 Current Skills: HTML, CSS, Sass, JavaScript, Typescript,
@@ -62,33 +67,37 @@ const aboutArray = [
         title: 'Interests & Future',
         body: (
             <Paragraph size='large' textAlign='center' fill>
-                Stated with the basics, and now slowly but surely I'm getting to
-                have a wider knowledge about Software Engineering, how to
-                approach problems how to solve challenges.
+                I started with the basics, and now I’m slowly but surely
+                expanding my Software Engineering skills, how to approach
+                problems, and how to solve challenges.
                 <br />
                 <br />
-                So here's What I'm Doing: constantly trying to solve and
-                understand Data Structure and Algorithms. currently trying to
-                learn Golang, we shall see in few weeks how that goes!
+                So here's what I'm doing:
                 <br />
-                Mobile development: I've been trying to develope apps with React
-                Native; bad idea, tried Ionic because of the new integration
-                with React, it looked like it was trying too hard to look like
-                React with too many abstractions I decided to go with Flutter,
-                in experimental phase I think I like it better, it has a great
-                performance and it is backed by Google so I'm gonna give it my
-                best (wish me luck).
+                I constantly try to solve and understand Data Structure and
+                Algorithms.
                 <br />
-                Python,{' '}
+                I am currently trying to learn Golang. (We shall see in a few
+                weeks how that goes!)
+                <br />
+                I've been working on developing mobile apps with React
+                Native...bad idea! Then I tried Ionic because of the new
+                integration with React...which looked like it was trying too
+                hard to look like React. Finally, I decided to go with Flutter.
+                Even though it’s in the experimental phase, I think I like it
+                better because it has great performance and is backed by Google.
+                I'm gonna give it my best (wish me luck)!
+                <br /> Python,{' '}
                 <Anchor href='https://media1.tenor.com/images/19184526e407b1ae4c051a779816f428/tenor.gif'>
                     Why?
                 </Anchor>
-                .
                 <br />
                 <br />
-                And Here's what I hope to accomplish: become an application
-                architect, be involved with the whole life cycle of an app, work
-                on AI/ML integrations on mobile and web apps.
+                And here's what I hope to accomplish:
+                <br />
+                Become an application architect · Be involved with the whole
+                life cycle of an app · Work on AI/ML integrations on mobile and
+                web apps
             </Paragraph>
         )
     }
@@ -97,11 +106,13 @@ const aboutArray = [
 const renderContent = () =>
     aboutArray.map(data => (
         <Box
+            a11yTitle={data.title}
+            animation='fadeIn'
             gap='large'
             justify='center'
             align='center'
             margin='large'
-            elevation='small'
+            elevation='medium'
             pad='large'
             round='small'
             fill='horizontal'
@@ -122,6 +133,9 @@ export default () => {
             pad='medium'
             align='center'
         >
+            <Head>
+                <title>About</title>
+            </Head>
             <Box pad='medium'>
                 <Heading margin={{ top: 'none' }}>About</Heading>
             </Box>

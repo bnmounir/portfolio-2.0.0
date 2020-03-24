@@ -3,6 +3,7 @@ import axios from 'axios';
 
 export default {
     plugins: [
+        ['react-static-plugin-google-analytics', { id: 'UA-133374571-2' }],
         [
             require.resolve('react-static-plugin-source-filesystem'),
             {

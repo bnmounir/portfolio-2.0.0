@@ -48,7 +48,8 @@ export default () => {
                     ©Copyright
                 </Text>
             </Box>
-            <Link to='/'>
+
+            <Anchor href='https://github.com/bnmounir/portfolio-2.0.0'>
                 <Box
                     height='xxsmall'
                     width='xxsmall'
@@ -57,7 +58,8 @@ export default () => {
                     // eslint-disable-next-line max-len
                     background='url(https://pbs.twimg.com/profile_images/1241544585777680384/HDLwPC3i_400x400.jpg)'
                 />
-            </Link>
+            </Anchor>
+
             <Media />
         </Footer>
     );
