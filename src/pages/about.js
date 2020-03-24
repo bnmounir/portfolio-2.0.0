@@ -82,11 +82,11 @@ const aboutArray = [
                 <br />
                 I've been working on developing mobile apps with React
                 Native...bad idea! Then I tried Ionic because of the new
-                integration with React...which looked like it was trying too
-                hard to look like React. Finally, I decided to go with Flutter.
-                Even though it’s in the experimental phase, I think I like it
-                better because it has great performance and is backed by Google.
-                I'm gonna give it my best (wish me luck)!
+                integration with React...it looked like it was trying too hard
+                to look like React. Finally, I decided to go with Flutter. Even
+                though I'm just experimenting with it, I think I like it better,
+                it has great performance overall and it is backed by Google. I'm
+                gonna give it my best (wish me luck)!
                 <br /> Python,{' '}
                 <Anchor href='https://media1.tenor.com/images/19184526e407b1ae4c051a779816f428/tenor.gif'>
                     Why?
