@@ -1,5 +1,5 @@
 import React, { createContext, useReducer } from 'react';
-import { Root, Head } from 'react-static';
+import { Root } from 'react-static';
 
 import { GlobalStyle } from './GlobalStyle';
 import { Grommet, Box } from 'grommet';
@@ -31,17 +31,6 @@ export default () => {
 
     return (
         <Root>
-            <Head>
-                <script
-                    async
-                    src='https://www.googletagmanager.com/gtag/js?id=UA-133374571-2'
-                ></script>
-                <script>
-                    window.dataLayer = window.dataLayer || []; function gtag()
-                    {dataLayer.push(arguments)}
-                    gtag('js', new Date()); gtag('config', 'UA-133374571-2');
-                </script>
-            </Head>
             <GlobalStyle />
             <ThemeContext.Provider value={{ state, dispatch }}>
                 <Header />
