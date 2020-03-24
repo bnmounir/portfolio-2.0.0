@@ -6,7 +6,7 @@ import projects from '../projects.svg';
 
 const projectsArray = [
     {
-        title: 'Data structure',
+        title: 'Data structure and Front-end Technology',
         body:
             'Blockchain · Angular 2 · Typescript \n This was my final project at a coding bootcamp. The presentation slideshow is @ bit.ly/2GBMWwY',
         imgUrl:
@@ -67,7 +67,7 @@ const ProjectBoxList = () =>
             align='center'
             margin='large'
             elevation='xsmall'
-            pad='xsmall'
+            pad='small'
             round='small'
             hoverIndicator={true}
             onClick={() => window.open(Project.projectLink, '_blank')}
@@ -81,7 +81,7 @@ const ProjectBoxList = () =>
                 fill='horizontal'
                 margin='none'
             >
-                <Heading size='small' alignSelf='center'>
+                <Heading size='small' textAlign='center'>
                     {Project.title}
                 </Heading>
                 <Paragraph textAlign='center'>{Project.body}</Paragraph>
