@@ -37,13 +37,20 @@ export default () => {
                         href='https://github.com/react-static/react-static'
                         label='React-Static'
                     />{' '}
-                    and{' '}
+                    +{' '}
                     <Anchor
                         color='#69306d'
-                        a11yTitle='React Static'
+                        a11yTitle='Grommet'
                         href='https://v2.grommet.io/'
                         label='Grommet'
                     />{' '}
+                    +{' '}
+                    <Anchor
+                        color='#69306d'
+                        a11yTitle='unDraw'
+                        href='https://undraw.co/'
+                        label='unDraw'
+                    />
                     <br />
                     ©Copyright
                 </Text>
