@@ -7117,11 +7117,6 @@ react-side-effect@^1.1.0:
   dependencies:
     shallowequal "^1.0.1"
 
-react-static-plugin-google-analytics@^0.0.0:
-  version "0.0.0"
-  resolved "https://registry.yarnpkg.com/react-static-plugin-google-analytics/-/react-static-plugin-google-analytics-0.0.0.tgz#882b73a18575cceeea116b4fdd5db098c2a0c84b"
-  integrity sha512-wjr9HMAjjxr9UYJJzT2J9dTlmb4KETMraz8fPRn+d4RRR6/FhJLVMb5RYjP/gRw1eSyfgS/7dOwx/RUHanzjug==
-
 react-static-plugin-reach-router@^7.2.0:
   version "7.2.3"
   resolved "https://registry.yarnpkg.com/react-static-plugin-reach-router/-/react-static-plugin-reach-router-7.2.3.tgz#0b991e347a64ee462cfa7b2b08d34bec56620a5b"
