@@ -1,6 +1,6 @@
 import React from 'react';
 import { Head } from 'react-static';
-import { Box, Clock, Heading, Paragraph, Anchor } from 'grommet';
+import { Box, Clock, Heading, Paragraph, Anchor, Image } from 'grommet';
 import about from '../about.svg';
 
 const aboutArray = [
@@ -8,20 +8,37 @@ const aboutArray = [
         title: 'Code',
         body: (
             <Paragraph size='large' textAlign='center' fill>
-                It took me about three days to build this website. (Quarantine
-                has a silver lining, I guess!) I had put it on the back burner
-                for a while because building a portfolio website can be somewhat
-                tricky. I started out using DivJoy a couple of weeks back (today
-                is 03/22/20). <Anchor href='https://divjoy.com/'>DivJoy</Anchor>{' '}
-                was featured on Product Hunt at the time, and it got me curious.
-                It's pretty cool, but it's also still really young. I decided to
-                go with React Static because it felt more intuitive. Last but
-                not least, the code for this app is hosted on{' '}
+                It took me about three days to build this website. (My
+                quarantine's silver lining!) I had put it on the back burner
+                because it had to be perfect but I came to realize that
+                perfection was a big barrier in the life of an engineer, to me
+                engineering is about finding clever ways to solve a problem,
+                that's what I set myself to accomplish from now on. the code for
+                this app is hosted on{' '}
                 <Anchor href='https://github.com/bnmounir/portfolio-2.0.0'>
                     Github.
                 </Anchor>
             </Paragraph>
-        )
+        ),
+    },
+    {
+        title: 'Hackathons',
+        body: (
+            <Paragraph size='large' textAlign='center' fill>
+                Participated in{' '}
+                <Anchor
+                    onClick={() =>
+                        window.open('https://www.hoohacks.io/', '_blank')
+                    }
+                >
+                    HooHacks 2020.
+                </Anchor>{' '}
+                My team built a Firebase serverless React Native social media
+                application where people can post about scarce items that become
+                available in different stores across the U.S. to help fight the
+                COVID-19 pandemic.
+            </Paragraph>
+        ),
     },
     {
         title: 'History',
@@ -36,32 +53,33 @@ const aboutArray = [
                 I opted for an intensive one-year coding bootcamp program in
                 NYC. It started in September 2018 and I've been coding nonstop
                 ever since. Over the past two years, I’ve faced a lot of
-                challenges, have learned even more and got to build some cool
+                challenges, have learned even more, and got to build some cool
                 little apps along the way too.
             </Paragraph>
-        )
+        ),
     },
     {
         title: 'Skills',
         body: (
             <Paragraph size='large' textAlign='center' fill>
-                I found that Bootcamps tend to be very experimental—a lot of
-                trial by error and frequent curriculum updates. While I was a
-                student, it felt unsettling to see how little progress our class
-                was making. I quickly recognized the need of an additional
-                outside source. I started taking several courses and tutorials
-                online to supplement the Bootcamp. I used FreeCodeCamp, Dev.to,
-                YouTube, and Udemy to name a few. These classes were where I
-                started to build my foundations in coding. The journey wasn't
-                without bumps, but the longer you persist the bigger the reward.
-                <br />
-                <br />
-                Current Skills: HTML, CSS, Sass, JavaScript, Typescript,
-                Node.JS, Express.JS, React, Redux, Serverless Apps, Server-side
-                rendering, NoSQL, Redis, REST API’s, GraphQL, Testing, Web
-                Analytics, Git, GitHub, Slack, Jira.
+                My focus is to constantly improve my analytical ability to solve
+                problems, and to do so there's three main areas I'm focusing;
+                interpersonal skills and reasoning, tech toolkit, and ability to
+                solve problems efficiently.
             </Paragraph>
-        )
+        ),
+    },
+    {
+        title: 'Extra Curricular',
+        body: (
+            <Paragraph size='large' textAlign='center' fill>
+                When I was in college, I worked in the restaurant industry as a
+                chef. Now, I'm a Chef Volunteer instructor at City Harvest in
+                New York City, where we help communities find healthier food
+                options and give them basic lessons on cooking. I also love
+                bouldering!
+            </Paragraph>
+        ),
     },
     {
         title: 'Interests & Future',
@@ -69,7 +87,7 @@ const aboutArray = [
             <Paragraph size='large' textAlign='center' fill>
                 I started with the basics, and now I’m slowly but surely
                 expanding my Software Engineering skills, how to approach
-                problems, and how to solve challenges.
+                problems, and how to build my career.
                 <br />
                 <br />
                 So here's what I'm doing:
@@ -77,38 +95,47 @@ const aboutArray = [
                 I constantly try to solve and understand Data Structure and
                 Algorithms.
                 <br />
-                I am currently trying to learn Golang. (We shall see in a few
-                weeks how that goes!)
-                <br />
-                I've been working on developing mobile apps with React
-                Native...bad idea! Then I tried Ionic because of the new
-                integration with React...it looked like it was trying too hard
-                to look like React. Finally, I decided to go with Flutter. Even
-                though I'm just experimenting with it, I think I like it better,
-                it has great performance overall and it is backed by Google. I'm
-                gonna give it my best (wish me luck)!
-                <br /> Python,{' '}
-                <Anchor href='https://media1.tenor.com/images/19184526e407b1ae4c051a779816f428/tenor.gif'>
-                    Why?
-                </Anchor>
+                And I'm building more web and mobile apps, while digging into
+                system design and architecture challenges.
                 <br />
                 <br />
                 And here's what I hope to accomplish:
                 <br />
-                Become an application architect · Be involved with the whole
-                life cycle of an app · Work on AI/ML integrations on mobile and
-                web apps
+                Become an application architect and work on AI/ML integrations.
             </Paragraph>
-        )
-    }
+        ),
+    },
+
+    {
+        title: 'Thanks for reading about me!',
+        body: (
+            <Box
+                round='small'
+                border={{
+                    color: '#69306d',
+                    size: 'large',
+
+                    side: 'all',
+                }}
+                pad='none'
+                margin='none'
+            >
+                <Image
+                    margin='none'
+                    fit='contain'
+                    src='https://d2gn4xht817m0g.cloudfront.net/p/profiles/cover_photos/background/008/606/358/8606358-66bb43e66a30eea5ea6c1e9950ebbc986de44c6a.jpg?1586870567'
+                />
+            </Box>
+        ),
+    },
 ];
 
 const renderContent = () =>
-    aboutArray.map(data => (
+    aboutArray.map((data) => (
         <Box
             a11yTitle={data.title}
             animation='fadeIn'
-            gap='large'
+            gap='small'
             justify='center'
             align='center'
             margin='large'

@@ -9,17 +9,17 @@ const Media = () => (
         <Anchor
             a11yTitle='Follow me on Twitter'
             href='https://twitter.com/bnmounir7'
-            icon={<Twitter color='#69306d' />}
+            icon={<Twitter />}
         />
         <Anchor
             a11yTitle='Connect with me on Linkedin'
             href='https://www.linkedin.com/in/bnmounir/'
-            icon={<Linkedin color='#69306d' />}
+            icon={<Linkedin />}
         />
         <Anchor
             a11yTitle='Follow me on Github'
             href='https://github.com/bnmounir'
-            icon={<Github color='#69306d' />}
+            icon={<Github />}
         />
     </Box>
 );
@@ -32,21 +32,18 @@ export default () => {
                     made with ❤️ and open source
                     <br />
                     <Anchor
-                        color='#69306d'
                         a11yTitle='React Static'
                         href='https://github.com/react-static/react-static'
                         label='React-Static'
                     />{' '}
                     +{' '}
                     <Anchor
-                        color='#69306d'
                         a11yTitle='Grommet'
                         href='https://v2.grommet.io/'
                         label='Grommet'
                     />{' '}
                     +{' '}
                     <Anchor
-                        color='#69306d'
                         a11yTitle='unDraw'
                         href='https://undraw.co/'
                         label='unDraw'
@@ -55,17 +52,27 @@ export default () => {
                     ©Copyright
                 </Text>
             </Box>
-
-            <Anchor href='https://github.com/bnmounir/portfolio-2.0.0'>
-                <Box
-                    height='xxsmall'
-                    width='xxsmall'
-                    a11yTitle='avatar'
-                    round='full'
-                    // eslint-disable-next-line max-len
-                    background='url(https://pbs.twimg.com/profile_images/1241544585777680384/HDLwPC3i_400x400.jpg)'
-                />
-            </Anchor>
+            <Box align='center'>
+                <Anchor
+                    onClick={() =>
+                        window.open(
+                            'https://docs.google.com/document/d/12Y5dM9nNhmpoXS1prscPWY_ZO-_tsnR4VVAJPi4gFyc/edit?usp=sharing',
+                            '_blank'
+                        )
+                    }
+                    a11yTitle='Resume'
+                >
+                    <Box
+                        height='xxsmall'
+                        width='xxsmall'
+                        a11yTitle='resume'
+                        round='full'
+                        // eslint-disable-next-line max-len
+                        background='url(https://pbs.twimg.com/profile_images/1241544585777680384/HDLwPC3i_400x400.jpg)'
+                    />
+                    <Text size='xsmall'>Resume</Text>
+                </Anchor>
+            </Box>
 
             <Media />
         </Footer>

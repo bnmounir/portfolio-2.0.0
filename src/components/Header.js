@@ -11,7 +11,7 @@ import { hp } from 'grommet-theme-hp';
 
 export default () => {
     const { state, dispatch } = useContext(ThemeContext);
-    const changeTheme = Bool => {
+    const changeTheme = (Bool) => {
         dispatch({ type: 'TOGGLE', data: Bool });
     };
 
@@ -19,7 +19,7 @@ export default () => {
         <Grommet theme={hp}>
             <Header background={{ color: '#69306d' }} pad='small'>
                 <Box direction='row' align='center' gap='small'>
-                    <Link to='/'>Moun</Link>
+                    <Link to='/'>Main</Link>
                     <Link to='/about'>About</Link>
                     <Link to='/projects'>Projects</Link>
                 </Box>
