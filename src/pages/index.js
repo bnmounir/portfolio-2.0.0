@@ -80,11 +80,12 @@ export default () => (
                     { name: 'Python', percent: 70, key: 5 },
                     { name: 'React', percent: 77, key: 7 },
                     { name: 'Redux', percent: 77, key: 8 },
-                    { name: 'Node', percent: 85, key: 9 },
-                    { name: 'Express', percent: 85, key: 10 },
-                    { name: 'Django', percent: 70, key: 11 },
-                    { name: 'SQL', percent: 70, key: 12 },
-                    { name: 'No-SQL', percent: 70, key: 13 },
+                    { name: 'React Native', percent: 55, key: 9 },
+                    { name: 'Node', percent: 85, key: 10 },
+                    { name: 'Express', percent: 85, key: 11 },
+                    { name: 'Django', percent: 70, key: 12 },
+                    { name: 'SQL', percent: 70, key: 13 },
+                    { name: 'No-SQL', percent: 70, key: 14 },
                 ]}
             />
         </Box>
